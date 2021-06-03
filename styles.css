@@ -34,7 +34,6 @@ li {
 .container {
   margin: 20px;
   font-family: var(--roboto);
-  background-color: var(--light);
 }
 
 /* Navbar */
