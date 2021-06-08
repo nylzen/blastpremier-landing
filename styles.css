@@ -222,6 +222,10 @@ hr {
     margin: 20px 0;
   }
 
+  .navbar-links li {
+    margin: 0;
+    padding: 10px;
+  }
   .navbar-btn {
     margin-top: 20px;
   }
