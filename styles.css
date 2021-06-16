@@ -31,8 +31,12 @@ li {
   list-style: none;
 }
 
+body {
+  background-color: #edf2f4;
+}
 .container {
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 1300px;
   font-family: var(--roboto);
 }
 
@@ -69,11 +73,27 @@ li {
   cursor: pointer;
 }
 
+.register-btn {
+  border: none;
+  background: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3 ease;
+}
+
+.register-btn:hover {
+  background: var(--dark);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 /* Portada */
 .portada-container {
   background: url("https://cdn.shopify.com/s/files/1/0254/4992/2665/products/BLAST_Premier_WallPaper_Desktop_01.jpg?v=1603119880")
     no-repeat center/cover;
-  height: 80vh;
+  height: 60vh;
   margin: 20px 0;
   border-radius: 10px;
 }
@@ -111,9 +131,8 @@ li {
 
 /* About Blast */
 .about-container {
+  width: 100%;
   display: flex;
-  align-items: flex-start;
-  margin: 30px;
 }
 
 .about-text {
@@ -152,7 +171,9 @@ hr {
 .events-title {
   text-align: center;
   color: var(--dark);
-  margin: 50px 0;
+  margin: 70px 0;
+  text-transform: uppercase;
+  font-size: 3rem;
 }
 .events-card {
   display: flex;
@@ -182,10 +203,16 @@ hr {
   color: var(--light);
   background: var(--red);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .card-subtitle {
   color: var(--light);
+}
+
+.dates-p {
+  font-weight: 700;
+  color: var(--red);
 }
 
 .card-body {
@@ -207,6 +234,48 @@ hr {
   cursor: pointer;
   background-color: var(--red);
   color: var(--light);
+}
+
+/* BLAST SHOP SECTION */
+.shop-items {
+  display: flex;
+}
+
+.shop-title {
+  text-align: center;
+  margin: 55px 0;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.shop-text h2 {
+  margin-bottom: 25px;
+}
+
+.shop-text p {
+  max-width: 80%;
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+.shop-btn {
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background: var(--dark);
+  color: var(--light);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+  background: var(--red);
+}
+
+.shop-img img {
+  width: 700px;
+  max-width: 100%;
 }
 
 /* MEDIAQUERIES */
