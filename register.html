@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="register.css" />
+    <title>Blast:Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- CONTENEDOR IMAGEN -->
+      <div class="register-img"></div>
+      <!-- CONTENEDOR REGISTER -->
+      <div class="register-container">
+        <!-- CONTENEDOR SIGN IN LINK -->
+        <div class="sign-in-container">
+          <p class="sign-in-link">Already a member? <a href="#">Sign In</a></p>
+        </div>
+        <!-- CONTENEDOR TEXTO DEL FORM -->
+        <div class="flex">
+          <div class="form-container">
+            <div class="form-text">
+              <h1 class="form-title">Sign up to Blast Premier</h1>
+              <div class="card-container">
+                <div class="card google"><i class="fab fa-google"></i></div>
+                <div class="card twitter"><i class="fab fa-twitter"></i></div>
+              </div>
+              <hr class="divider" />
+              <!-- FORMULARIO -->
+              <form>
+                <div class="name-user">
+                  <div class="name">
+                    <label for="name">Name </label>
+                    <input type="text" name="name" id="name" />
+                  </div>
+                  <div class="username">
+                    <label for="username">Username </label>
+                    <input type="text" name="username" id="username" />
+                  </div>
+                </div>
+
+                <label for="email">Email </label>
+                <input type="text" name="email" id="email" class="email" />
+
+                <label for="password">Password </label>
+                <input
+                  type="text"
+                  name="password"
+                  id="password"
+                  placeholder="6+ characters"
+                  class="password"
+                />
+                <div class="terms-container">
+                  <input type="checkbox" class="checkbox" />
+                  <p>
+                    Creating an account means you’re okay with our
+                    <a href="">Terms of Service</a>,<a href=""
+                      >Privacy Policy</a
+                    >
+                    , and our default <a href="">Notification Settings.</a>
+                  </p>
+                </div>
+                <button type="submit" class="create-btn">Create Account</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

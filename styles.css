@@ -31,9 +31,6 @@ li {
   list-style: none;
 }
 
-body {
-  background-color: #edf2f4;
-}
 .container {
   margin: 20px auto;
   max-width: 1300px;
@@ -82,7 +79,8 @@ body {
   transition: all 0.3 ease;
 }
 
-.register-btn:hover {
+.register-btn:hover,
+.register-btn a:hover {
   background: var(--dark);
   color: #fff;
   cursor: pointer;
