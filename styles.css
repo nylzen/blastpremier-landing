@@ -4,11 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
   --roboto: "Roboto", sans-serif;
   --indigo: #212459;
+  --indigo--light: #35356d;
+  --indigo--dark: #000037;
   --yellow: #e6b14f;
   --red: #fa2b57;
   --light: #f8f9fa;
@@ -32,9 +35,13 @@ li {
 }
 
 .container {
-  margin: 20px auto;
-  max-width: 1300px;
+  margin: 20px auto 0 auto;
   font-family: var(--roboto);
+}
+
+.max-width {
+  max-width: 1300px;
+  margin: auto;
 }
 
 /* Navbar */
@@ -92,7 +99,8 @@ li {
   background: url("https://cdn.shopify.com/s/files/1/0254/4992/2665/products/BLAST_Premier_WallPaper_Desktop_01.jpg?v=1603119880")
     no-repeat center/cover;
   height: 60vh;
-  margin: 20px 0;
+  width: 80vw;
+  margin: 20px auto;
   border-radius: 10px;
 }
 
@@ -130,6 +138,7 @@ li {
 /* About Blast */
 .about-container {
   width: 100%;
+
   display: flex;
 }
 
@@ -137,8 +146,8 @@ li {
   color: var(--dark);
 }
 
-.about-text h2 {
-  margin-bottom: 25px;
+.about-title {
+  margin: 50px 0 25px 0;
 }
 
 .about-text p {
@@ -156,19 +165,23 @@ hr {
 /* Cards  */
 .events-container {
   margin: 70px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--indigo--dark);
+
+  height: 700px;
 }
 
 .cards-container {
   display: flex;
   justify-content: center;
   gap: 50px;
-
   margin-bottom: 50px;
 }
 
 .events-title {
   text-align: center;
-  color: var(--dark);
+  color: var(--light);
   margin: 70px 0;
   text-transform: uppercase;
   font-size: 3rem;
@@ -181,6 +194,7 @@ hr {
   overflow: hidden;
   background: var(--indigo);
   transition: all 0.2s ease;
+  box-shadow: 0 10px 40px 0 rgb(0 0 0 / 50%);
 }
 
 .events-card:hover {
@@ -235,6 +249,13 @@ hr {
 }
 
 /* BLAST SHOP SECTION */
+
+.shop-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 500px;
+}
 .shop-items {
   display: flex;
 }
@@ -274,6 +295,70 @@ hr {
 .shop-img img {
   width: 700px;
   max-width: 100%;
+  box-shadow: 0 10px 40px 0 rgb(0 0 0 / 50%);
+}
+
+/* CONTACT FORM */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: var(--indigo);
+  color: var(--light);
+  height: 500px;
+}
+
+.contact-title {
+  font-size: 3rem;
+  margin: 25px 0;
+}
+
+.contact-span {
+  color: var(--red);
+}
+
+.contact a {
+  border-bottom: 2px solid var(--light);
+  color: var(--light);
+  font-size: 1.1rem;
+}
+
+.contact-form h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-btn {
+  width: 300px;
+  padding: 10px 16px;
+  background-color: var(--red);
+  color: var(--light);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #b42141;
+}
+
+form input {
+  height: 40px;
+  width: 300px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: var(--light);
+  margin-bottom: 15px;
 }
 
 /* MEDIAQUERIES */

@@ -18,7 +18,7 @@
   <body>
     <div class="container">
       <header>
-        <nav class="navbar-container">
+        <nav class="navbar-container max-width">
           <div class="navbar-logo">
             <a href="#"
               ><img src="assets/img/BLASTLogo.png" alt="blastpro logo"
@@ -42,9 +42,9 @@
       </header>
       <main>
         <!-- Portada -->
-        <section class="portada-container"></section>
+        <section class="portada-container max-width"></section>
         <!-- Evento Info -->
-        <section class="event-container">
+        <section class="event-container max-width">
           <div class="event-items">
             <i class="fas fa-calendar"></i>
             <p>June 15 2021</p>
@@ -63,9 +63,9 @@
           </div>
         </section>
         <!-- About -->
-        <section id="about" class="about-container">
+        <section id="about" class="about-container max-width">
           <div class="about-text">
-            <h2>Welcome to Blast Premier</h2>
+            <h2 class="about-title">Welcome to Blast Premier</h2>
             <hr />
             <p>
               The most explosive, engaging and entertaining esports event in the
@@ -177,25 +177,49 @@
             <!-- /Card Items -->
           </div>
         </section>
-        <section id="shop" class="shop-container">
-          <h2 class="shop-title">Blast Shop</h2>
-          <div class="shop-items">
-            <div class="shop-text">
-              <h2>Blast Shop</h2>
-              <hr />
-              <p>
-                Crazy, chill or fresh? We got what you need. Refresh your
-                wardrobe with our new core collection styles! Shop now at
-                shop.blast.tv.
-              </p>
-              <button class="shop-btn">Shop now</button>
+        <section id="shop" class="shop-container max-width">
+          <div class="shop-items-container">
+            <h2 class="shop-title">Blast Shop</h2>
+            <div class="shop-items">
+              <div class="shop-text">
+                <h2>Blast Shop</h2>
+                <hr />
+                <p>
+                  Crazy, chill or fresh? We got what you need. Refresh your
+                  wardrobe with our new core collection styles! Shop now at
+                  shop.blast.tv.
+                </p>
+                <button class="shop-btn">Shop now</button>
+              </div>
+              <div class="shop-img">
+                <img
+                  src="https://blastpremier.com/wp-content/uploads/2020/08/blast-shop-promo.jpg"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="shop-img">
-              <img
-                src="https://blastpremier.com/wp-content/uploads/2020/08/blast-shop-promo.jpg"
-                alt=""
-              />
-            </div>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <div class="contact-info">
+            <h2 class="contact-title">
+              We've been <br />
+              <span class="contact-span">waiting for you.</span>
+            </h2>
+            <p>
+              Fill in the form or
+              <a href="mailto:example@email.com">Send us an email</a>
+            </p>
+          </div>
+          <div class="contact-form">
+            <h3>Send us a Message</h3>
+            <form class="form-container">
+              <input type="text" name="name" placeholder="Name" />
+              <input type="text" name="email" placeholder="Email" />
+              <input type="text" name="subject" placeholder="Subject" />
+              <input type="text" name="message" placeholder="Message" />
+              <button type="submit" class="contact-btn">Send Message</button>
+            </form>
           </div>
         </section>
       </main>
