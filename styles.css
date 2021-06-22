@@ -7,6 +7,12 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: url(./assets/img/premier-background.svg);
+  height: 100%;
+  background-size: cover;
+}
+
 :root {
   --roboto: "Roboto", sans-serif;
   --indigo: #212459;
@@ -32,6 +38,26 @@ a:hover {
 
 li {
   list-style: none;
+}
+
+.to-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background-color: var(--red);
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.arrow-top:hover {
+  border-bottom: none;
+  color: var(--light);
 }
 
 .container {
@@ -167,7 +193,7 @@ hr {
   margin: 70px 0;
   display: flex;
   flex-direction: column;
-  background-color: var(--indigo--dark);
+  background-color: var(--indigo);
 
   height: 700px;
 }
@@ -359,6 +385,22 @@ form input {
   border: none;
   background: var(--light);
   margin-bottom: 15px;
+}
+
+/* SPONSORS */
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.sponsors img {
+  height: 100px;
+  width: 120px;
+  margin: 0 50px;
+  filter: invert(40%);
 }
 
 /* MEDIAQUERIES */
