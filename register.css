@@ -168,6 +168,10 @@ input:focus {
   cursor: pointer;
 }
 
+.create-btn a {
+  color: #fff;
+}
+
 /* MEDIA QUERIES  */
 @media (max-width: 375px) {
   .container {
@@ -200,7 +204,7 @@ input:focus {
     margin: 10px auto;
     max-width: 300px;
     padding: 20px 10px;
-    overflow: auto];
+    overflow: auto;
   }
 
   .name-user {
@@ -228,7 +232,7 @@ input:focus {
   }
 
   .create-btn {
-    margin-top: 20px;
+    margin: 20px 0 50px 0;
     height: 50px;
     width: 100%;
     font-size: 1.2rem;
