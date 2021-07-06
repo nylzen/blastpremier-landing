@@ -13,30 +13,27 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- FavIcon -->
+    <link rel="icon" type="image/png" href="/assets/img/favicon.jpg">
     <title>BLAST Premier</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <nav class="navbar-container max-width">
-          <div class="navbar-logo">
-            <a href="#"
-              ><img src="assets/img/BLASTLogo.png" alt="blastpro logo"
-            /></a>
-          </div>
-          <div class="navbar-links">
-            <ul>
+        <nav class="max-width">
+          <img class='logo2' src="assets/img/BLASTLogo.png" alt="">
+          <button class='hamburger' id='hamburger'>
+              <i class="fa fa-bars"></i>
+          </button>
+          <ul class="nav-ul" id="nav-ul">
               <li><a href="#about">About Us</a></li>
               <li><a href="#events">Events</a></li>
               <li><a href="#shop">Blast Shop</a></li>
               <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="navbar-btn-container">            
-              <a href="register.html" class="register-btn">Register</a>            
-              <a href="login.html" class="navbar-btn">Login</a>    
-           </div>
-        </nav>
+              <li><a href="login.html" class="btn">Login</a></li>
+              <li><a href="register.html" class="btn">Register</a></li>
+          </ul>
+      </nav> 
       </header>
       <main>
         <div class="to-top">
@@ -256,5 +253,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

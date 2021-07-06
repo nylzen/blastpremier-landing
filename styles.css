@@ -31,11 +31,6 @@ a {
   padding-bottom: 5px;
 }
 
-a:hover {
-  border-bottom: 2px solid var(--dark);
-  color: #000;
-}
-
 li {
   list-style: none;
 }
@@ -70,54 +65,67 @@ li {
   margin: auto;
 }
 
-/* Navbar */
-.navbar-container {
+/* NAVBAR 2 */
+nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding: 15px;
 }
 
-.navbar-logo img {
-  width: 70px;
-}
-
-.navbar-links ul {
+.nav-ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
 }
 
-.navbar-links li {
-  margin-left: 30px;
+.nav-ul li a {
+  display: inline-block;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
-.navbar-btn {
+.nav-ul li a:hover {
+  border-bottom: 2px solid var(--dark);
+  color: #000;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.logo2 {
+  width: 100px;
+}
+
+.btn {
+  margin: 0 0 0 15px;
   padding: 10px 30px;
-  border-radius: 5px;
-  border: 1px var(--dark) solid;
-  background: none;
-  transition: all 0.3s ease;
-}
-
-.navbar-btn:hover {
+  cursor: pointer;
+  font-size: 1rem;
   background: var(--dark);
-  color: #fff;
-  cursor: pointer;
-}
-
-.register-btn {
-  border: none;
-  background: none;
-  padding: 10px 30px;
-  cursor: pointer;
-  font-weight: 600;
+  border-radius: 8px;
+  color: var(--light) !important;
   transition: all 0.3 ease;
 }
 
-.register-btn:hover,
-.register-btn a:hover {
-  background: var(--dark);
-  color: #fff;
-  cursor: pointer;
-  border-radius: 5px;
+.btn:hover {
+  background: var(--red);
+  border: none;
 }
 
 /* Portada */
@@ -441,34 +449,34 @@ form input {
 }
 /* MEDIAQUERIES */
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /*Navbar */
-  .navbar-container {
+  .nav-ul {
+    display: none;
     flex-direction: column;
-    flex-wrap: wrap;
-
-    margin: 0 auto;
+    width: 100%;
   }
 
-  .navbar-logo {
-    margin: 20px 0;
+  .nav-ul.show {
+    display: flex;
   }
-
-  .navbar-links li {
-    margin: 0;
-    padding: 10px;
+  .hamburger {
+    display: block;
   }
-  .navbar-btn {
-    margin-top: 20px;
-  }
-
-  .navbar-logo img {
+  .logo {
     width: 100px;
   }
 
+  .nav-ul li a {
+    padding: 10px;
+  }
+
+  .btn {
+    margin: 0 0 10px 0;
+  }
   /*Portada*/
   .portada-container {
-    height: 50vh;
+    height: 40vh;
     width: 90vw;
   }
 
