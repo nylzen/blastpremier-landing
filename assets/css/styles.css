@@ -452,6 +452,9 @@ form input {
 
 @media (max-width: 767px) {
   /*Navbar */
+  nav {
+    height: inherit;
+  }
   .nav-ul {
     display: none;
     flex-direction: column;
